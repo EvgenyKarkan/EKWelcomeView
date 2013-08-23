@@ -33,7 +33,7 @@
 	self = [super initWithFrame:frame];
 	
 	if (self) {
-		self.backgroundColor = [[UIColor magentaColor] colorWithAlphaComponent:0.6f];
+		self.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5f];
 		[self createSubViews];
 	}
 	
@@ -45,7 +45,7 @@
 - (void)createSubViews
 {
 	self.scrollView  = [[UIScrollView alloc] init];
-	self.scrollView.backgroundColor = [[UIColor yellowColor] colorWithAlphaComponent:0.6f];
+	self.scrollView.backgroundColor = [[UIColor cyanColor] colorWithAlphaComponent:0.6f];
 	self.scrollView.delegate = self;
 	self.scrollView.showsHorizontalScrollIndicator = NO;
 	self.scrollView.pagingEnabled = YES;

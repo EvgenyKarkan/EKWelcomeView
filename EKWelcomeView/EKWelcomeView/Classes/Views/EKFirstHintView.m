@@ -21,7 +21,7 @@
 {
 	self = [super initWithFrame:frame];
 	if (self) {
-		self.backgroundColor = [[UIColor blueColor] colorWithAlphaComponent:0.6f];
+		self.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.2f];
 	}
 	
 	self.hint = [[UILabel alloc] init];

@@ -28,6 +28,7 @@
 	self.hint.backgroundColor = [UIColor clearColor];
 	self.hint.textAlignment = NSTextAlignmentCenter;
 	self.hint.text = @"Here is your hints";
+	self.hint.textColor = [UIColor whiteColor];
 	[self addSubview:self.hint];
 	
 	return self;

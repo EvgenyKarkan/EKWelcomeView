@@ -40,7 +40,7 @@ static NSString * const kEKSegueIdentifier = @"nextControllerSegue";
 	[super didReceiveMemoryWarning];
 }
 
-#pragma mark - EKDismissWelcomeScreenProtocol's & segue's stuff
+#pragma mark - EKDismissWelcomeScreenDelegate's & segue's stuff
 
 - (void)dismissWelcomeScreen
 {

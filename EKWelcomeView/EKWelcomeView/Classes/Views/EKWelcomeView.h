@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol EKDismissWelcomeScreenProtocol <NSObject>
+@protocol EKDismissWelcomeScreenDelegate <NSObject>
 
 - (void)dismissWelcomeScreen;
 
@@ -17,7 +17,7 @@
 
 @interface EKWelcomeView : UIView
 
-@property (nonatomic, unsafe_unretained) id <EKDismissWelcomeScreenProtocol> delegate;
+@property (nonatomic, unsafe_unretained) id <EKDismissWelcomeScreenDelegate> delegate;
 
 
 @end

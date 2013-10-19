@@ -12,7 +12,7 @@
 
 static NSString * const kEKSegueIdentifier = @"nextControllerSegue";
 
-@interface EKWelcomeViewController () <EKDismissWelcomeScreenProtocol>
+@interface EKWelcomeViewController () <EKDismissWelcomeScreenDelegate>
 
 @property (nonatomic, strong) EKWelcomeView *welcomeView;
 @property (nonatomic, strong) EKDestinationViewController *myDestinationViewController;

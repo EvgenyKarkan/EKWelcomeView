@@ -64,7 +64,7 @@
 	[self.scrollView addSubview:self.fourthView];
     
 	self.pageControl = [[UIPageControl alloc] init];
-	self.pageControl.numberOfPages = [[self.scrollView subviews] count];
+	self.pageControl.numberOfPages = 4;
 	self.pageControl.currentPage = 0;
 	[self.pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventTouchUpInside];
 	[self addSubview:self.pageControl];

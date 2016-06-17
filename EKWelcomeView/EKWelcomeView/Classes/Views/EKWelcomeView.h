@@ -19,5 +19,4 @@
 
 @property (nonatomic, unsafe_unretained) id <EKDismissWelcomeScreenDelegate> delegate;
 
-
 @end

@@ -44,28 +44,28 @@
 
 - (void)createSubViews
 {
-	self.scrollView  = [[UIScrollView alloc] init];
-	self.scrollView.backgroundColor = [[UIColor cyanColor] colorWithAlphaComponent:0.6f];
-	self.scrollView.delegate = self;
-	self.scrollView.showsHorizontalScrollIndicator = NO;
-	self.scrollView.pagingEnabled = YES;
+    self.scrollView                                = [[UIScrollView alloc] init];
+    self.scrollView.backgroundColor                = [[UIColor cyanColor] colorWithAlphaComponent:0.6f];
+    self.scrollView.delegate                       = self;
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    self.scrollView.pagingEnabled                  = YES;
 	[self addSubview:self.scrollView];
     
-	self.firstView   = [[EKFirstHintView alloc] init];
+	self.firstView = [[EKFirstHintView alloc] init];
 	[self.scrollView addSubview:self.firstView];
     
-	self.secondView  = [[EKSecondHintView alloc] init];
+	self.secondView = [[EKSecondHintView alloc] init];
 	[self.scrollView addSubview:self.secondView];
     
-	self.thirdView   = [[EKThirdHintView alloc] init];
+	self.thirdView = [[EKThirdHintView alloc] init];
 	[self.scrollView addSubview:self.thirdView];
     
-	self.fourthView  = [[EKFourthHintView alloc] init];
+	self.fourthView = [[EKFourthHintView alloc] init];
 	[self.scrollView addSubview:self.fourthView];
     
-	self.pageControl = [[UIPageControl alloc] init];
-	self.pageControl.numberOfPages = [[self.scrollView subviews] count];
-	self.pageControl.currentPage = 0;
+    self.pageControl               = [[UIPageControl alloc] init];
+    self.pageControl.numberOfPages = [[self.scrollView subviews] count];
+    self.pageControl.currentPage   = 0;
 	[self.pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventTouchUpInside];
 	[self addSubview:self.pageControl];
     
